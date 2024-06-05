@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package fuzzing;
+
+message DataPacket {
+  optional uint32 flags = 1;
+  optional bytes data = 2;
+}
+
+message FuzzerInput {
+  bool config1 = 1;
+  int32 config2 = 2;
+  repeated DataPacket packets = 3;
+}

@@ -1,6 +1,6 @@
 include(FetchContent)
 
-find_package(Protobuf REQUIRED)
+#find_package(Protobuf REQUIRED)
 
 if(NOT Protobuf_FOUND)
     set(protobuf_BUILD_TESTS OFF)
